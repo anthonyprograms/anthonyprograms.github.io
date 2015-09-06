@@ -132,7 +132,6 @@ table.hoverable > tbody > tr:hover {
     font-weight: lighter;
     margin-bottom: 30px;
     vertical-align: middle;
-    display: none;
 }
 .moreBadge, .techBadge {
     position: relative;
