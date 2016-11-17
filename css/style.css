@@ -10,7 +10,7 @@ a:hover {
 }
 
 body {
-    background-color: #14E0A1;
+    background-color: #ffffff;
     text-align: center;
     /*vertical-align:middle;*/
     /*height: 100%;*/
@@ -54,7 +54,7 @@ body {
 }
 
 #myName {
-    color: white;
+    color: black;
     text-align: center;
 }
 
