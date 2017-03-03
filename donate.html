@@ -44,7 +44,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="donate.html">Donate</a>
+                        <a class="page-scroll" href="#page-top">Donate</a>
                     </li>
                 </ul>
             </div>
@@ -83,10 +83,13 @@
                     <label class='control-label'> </label>
                     <input class='form-control card-expiry-year' placeholder='YY' maxlength="2" type='text' data-stripe="exp_year">
                 </div>
-                <div class='col-xs-12 form-group required'>
-                    <label class='control-label'>Billing Postal Code</label>
-
+                <div class='col-xs-6 form-group expiration required'>
+                    <label class='control-label'>Postal Code</label>
                     <input placeholder='123456' class='form-control' type="text" maxlength="6" data-stripe="address_zip">
+                </div>
+                <div class='col-xs-6 form-group expiration required'>
+                    <label class='control-label'>Donation</label>
+                    <input placeholder='10' class='form-control' type="number" maxlength="6">
                 </div>
 
                 <input type="submit" class='form-control btn btn-primary submit-button' value="Donate">
