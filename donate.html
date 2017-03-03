@@ -56,7 +56,7 @@
         <!-- /.container-fluid -->
     </nav>
 
-    <section id="donate" class="features">
+    <section id="donate">
         <div class="container">
             <h3>Donate to keep BeKiind going!</h3>
             <form action="/your-charge-code" method="POST" id="payment-form">
@@ -97,21 +97,16 @@
         </div>
     </section>
 
-    <section id="contact" class="contact bg-primary">
+    <footer>
         <div class="container">
             <ul class="list-inline list-social">
                 <li class="social-twitter">
                     <a href="https://twitter.com/bekiind"><i class="fa fa-twitter"></i></a>
                 </li>
-                <!-- <li class="social-instagram">
+                <li class="social-instagram">
                     <a href="#"><i class="fa fa-instagram"></i></a>
-                </li> -->
+                </li>
             </ul>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
             <p>&copy; 2016 BeKiind. All Rights Reserved.</p>
         </div>
     </footer>
@@ -128,6 +123,11 @@
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
 
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+    <script type="text/javascript">
+  Stripe.setPublishableKey('pk_test_SnAomBGCzAIo2GOqRokjIjHw');
+    </script>
 </body>
 
 </html>
