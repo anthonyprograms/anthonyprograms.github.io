@@ -61,34 +61,32 @@
 
                 <div class='col-xs-12 form-group required'>
                     <label class='control-label'>Name</label>
-                    <input class='form-control' size='4' type='text'>
+                    <input class='form-control' size='4' maxlength="30" placeholder="Kind Person" type='text'>
                 </div>
                 <div class='col-xs-12 form-group required'>
                     <label class='control-label'>Message</label>
-                    <input class='form-control' size='4' type='text'>
+                    <input maxlength="150" class='form-control' size='4' placeholder="Let's keep this thing going!" type='text'>
                 </div>
                 <div class='col-xs-12 form-group card required'>
                     <label class='control-label'>Card Number</label>
-                    <input autocomplete='off' class='form-control card-number' size='20' type='text' data-stripe="number">
+                    <input autocomplete='off' class='form-control card-number' size='20' placeholder="1234123412341234" type='text' data-stripe="number">
                 </div>
                 <div class='col-xs-4 form-group cvc required'>
                     <label class='control-label'>CVC</label>
-                    <input autocomplete='off' class='form-control card-cvc' placeholder='ex. 311' size='4' type='text' data-stripe="exp_month">
+                    <input autocomplete='off' class='form-control card-cvc' placeholder='123' maxlength="3" type='text' data-stripe="exp_month">
                 </div>
                 <div class='col-xs-4 form-group expiration required'>
                     <label class='control-label'>Expiration</label>
-                    <input class='form-control card-expiry-month' placeholder='MM' size='2' type='text' data-stripe="exp_month">
+                    <input class='form-control card-expiry-month' placeholder='MM' maxlength="2" type='text' data-stripe="exp_month">
                 </div>
                 <div class='col-xs-4 form-group expiration required'>
                     <label class='control-label'> </label>
-                    <input class='form-control card-expiry-year' placeholder='YY' size='2' type='text' data-stripe="exp_year">
+                    <input class='form-control card-expiry-year' placeholder='YY' maxlength="2" type='text' data-stripe="exp_year">
                 </div>
+                <div class='col-xs-12 form-group required'>
+                    <label class='control-label'>Billing Postal Code</label>
 
-                <div class="form-row">
-                    <label>
-                    <span>Billing Postal Code</span>
-                    <input type="text" size="6" data-stripe="address_zip">
-                    </label>
+                    <input placeholder='123456' class='form-control' type="text" maxlength="6" data-stripe="address_zip">
                 </div>
 
                 <input type="submit" class='form-control btn btn-primary submit-button' value="Donate">
