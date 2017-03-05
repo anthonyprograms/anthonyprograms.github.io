@@ -1,4 +1,4 @@
-Stripe.setPublishableKey('pk_test_SnAomBGCzAIo2GOqRokjIjHw');
+Stripe.setPublishableKey('pk_live_U6tohXJoCQxCiNnnFfk1Klm8');
 $(function() {
   $('[data-stripe="card_number"]').payment('formatCardNumber');
   $('[data-stripe="cvc"]').payment('formatCardCVC');
